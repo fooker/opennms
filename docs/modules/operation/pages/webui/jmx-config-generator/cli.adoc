@@ -2,12 +2,12 @@
 = CLI-based utility
 
 The command line (CLI)-based tool is not installed by default.
-ifdef::opennms-prime[]
+ifeval::["{page-component-name}" == "meridian"]
 It is available as an RPM package in the official repositories.
-endif::opennms-prime[]
-ifndef::opennms-prime[]
+endif::[]
+ifeval::["{page-component-name}" == "horizon"]
 It is available as Debian and RPM package in the official repositories.
-endif::opennms-prime[]
+endif::[]
 
 == Installation
 

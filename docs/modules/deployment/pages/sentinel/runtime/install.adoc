@@ -15,6 +15,7 @@
 * Internet access to download the installation packages
 * Ensure DNS is configured, localhost and your servers host name is resolved properly
 * {page-component-title} Core instance runs on latest stable release
+* Java installed {compatible-javajdk}
 * System user with administrative permissions (sudo) to perform the installation tasks
 
 ifeval::["{page-component-title}" == "Horizon"]

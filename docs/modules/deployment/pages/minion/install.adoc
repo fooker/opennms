@@ -4,7 +4,7 @@
 [[objectives]]
 == Objectives
 
-* Install a {page-component-title} Minion on one of the following <<minion/system-requirements.adoc#operating-systems-Core, Operating Systems>>
+* Install a {page-component-title} Minion on one of the following <<minion/system-requirements.adoc#operating-systems-Core, operating systems>>
 * Secure access with encrypted passwords to the Karaf shell
 * Configure connection to message broker for communication with the {page-component-title} core instance
 * Verify the setup
@@ -14,6 +14,7 @@
 * The {page-component-title} core instance is running and configured with a <<core/setup-message-broker.adoc#setup-message-broker,message broker>>
 * Linux physical server or a virtual machine running a supported Linux operating system
 * Internet access to download the installation packages
+* Java installed {compatible-javajdk}
 * DNS is configured, localhost and your server's host name is resolved properly
 * {page-component-title} core instance runs on latest stable release
 * Minion server can access the {page-component-title} core instance via REST (8980/tcp) and desired message broker nodes (e.g., ActiveMQ 61616/tcp, Apache Kafke 9092/tcp)
