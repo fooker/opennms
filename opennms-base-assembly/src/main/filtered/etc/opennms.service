@@ -5,12 +5,13 @@ Requires=network.target network-online.target
 After=${install.postgresql.service}.service postgresql-10.service postgresql-11.service postgresql-12.service postgresql-13.service network.target network-online.target
 
 [Service]
-User=root
+User=opennms
 Environment="OPENNMS_HOME=${install.dir}"
 
 Type=forking
 PIDFile=${install.pid.file}
 
+ExecStartPre=${install.bin.dir}/fix-permissions.sh
 ExecStart=${install.init.dir}/opennms -s start
 ExecStop=${install.init.dir}/opennms stop
 
